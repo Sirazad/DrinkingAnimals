@@ -1,0 +1,35 @@
+ANIMALS: 
+The Zoo has various animals. All of them can make sounds, which differ.  
+Create at least 3 different animals.
+Animals need to drink, and can only drink from Waterbuckets. Animals keep track of the water they drank. 
+Drinking makes them happy, they express it with sounds and note the amount of water they drank.
+Make them be resilient at a different level, so there are animals which are more resilient, animals, which are less resilient.
+
+WATERSOURCE:
+Animals can only drink from WaterBuckets. 
+Create an interface called WaterbucketProvider. if a class implements this interface it must has a method wich returns a waterbucket.
+There are two places where Waterbuckets can be picked up implement classes for them:
+    -Zoo: it gives waterbucket filled with 1-5 liters of water with a 25 percent chance that the water is dirty.
+    -Fountain: it gives waterbucket filled with 1-3 liters of water with a 50 percent chance that the water is dirty.
+
+
+DIRTY WATER
+if an animal drinks from a bucket that contains dirty water, they get sick. 
+If you attempt to make a sick animal drink dirty water again, they complain and rejectWater.
+
+DATABASE
+create a database/structure for keeping tack of animals and water supply
+create a DAO system for JDBC and FILE to connect to the information needed
+fill things with data and use it
+
+INTRODUCE TIME
+Time passes and that means, animals need to drink, water will refill, and the sick heal. 
+Create a way to represent the passage of time. 
+Make it a parameter given for the simulation. 
+Any animal, that can not drink within a given set of days, will get seriously sick and need medical attention. 
+
+
+used models: 
+- DAO
+- MVC
+- FACTORY
